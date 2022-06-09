@@ -8,6 +8,7 @@ jobs:
       - run: printenv MAKOTOM
 
 workflows:
+  version: 2
   run:
     jobs:
       - build:
