@@ -1,0 +1,14 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: ubuntu:rolling
+    steps:
+      - run: printenv MAKOTOM
+
+workflows:
+  run:
+    jobs:
+      - build:
+          context: makotom-only
